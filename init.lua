@@ -238,6 +238,7 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 -- [[ Basic Keymaps ]]
+vim.keymap.set('n', '<leader>cf', vim.lsp.buf.format)
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
