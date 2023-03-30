@@ -463,6 +463,10 @@ mason_lspconfig.setup_handlers {
   end,
 }
 
+require('lspconfig').html.setup {
+  filetypes = { 'html', 'heex' }
+}
+
 -- nvim-cmp setup
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
